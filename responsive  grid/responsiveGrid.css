@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: #D48B5B;
+}
+
+#gridParent {
+    background: #F7DF6A;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.gridChild {
+    background: #6BC6F5;
+    filter: hue-rotate(calc(var(--i)*30deg));
+    min-height:100px;
+}

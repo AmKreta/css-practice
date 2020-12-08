@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='./typography.css'>
+</head>
+
+<body>
+    <div class='type type1'>typography</div>
+    <div class='type type2'>typography</div>
+    <div class='type type3 grad'>typography</div>
+    <div class='type type4'>
+        <script>
+            let a = 'typography'
+            s = '';
+            for (let i in a) {
+                s += `<span style='--i:${i+1}'>${a[i]}</span>`;
+            }
+            document.write(s);
+        </script>
+    </div>
+</body>
+
+</html>
